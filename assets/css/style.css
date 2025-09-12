@@ -503,4 +503,73 @@ footer p {
   color: #0056b3;
 }
 
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 20px;
+      background: #f9fafb;
+      color: #333;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #222;
+    }
+
+    /* Tabs container */
+    .tab {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    /* Tab buttons */
+    .tab button {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      outline: none;
+      cursor: pointer;
+      padding: 12px 25px;
+      border-radius: 30px;
+      transition: all 0.3s ease;
+      font-size: 15px;
+      font-weight: 500;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .tab button:hover {
+      background-color: #f0f4ff;
+      border-color: #007bff;
+    }
+
+    .tab button.active {
+      background-color: #007bff;
+      color: white;
+      border-color: #007bff;
+      font-weight: bold;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+    }
+
+    /* Tabs content */
+    .tabcontent {
+      display: none;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      border-radius: 15px;
+      background: #fff;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      animation: fadeEffect 0.5s;
+    }
+
+    .tabcontent h3 {
+      margin-top: 0;
+      color: #007bff;
+    }
+
+    .tabcontent p {
+      line-height: 1.6;
+    }
 }
