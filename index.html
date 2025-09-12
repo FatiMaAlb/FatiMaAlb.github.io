@@ -34,7 +34,7 @@
             <!--💡UPDATE: Add your social media links and CV file-->
             <a href="www.linkedin.com/in/Fatimah-Alburaiki]" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
             <a href="github.com/FatiMaAlb" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://scholar.google.com/citations?user=https://scholar.google.com/citations?hl=en&user=xCCaCLMAAAAJ" target="_blank" title="Google Scholar"></i> <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.library.cmu.edu%2Fservices%2Fgscholar&psig=AOvVaw2IEqdwcOg6ZAoILdrxIwjw&ust=1757693848221000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCPjV8tj50o8DFQAAAAAdAAAAABAE" alt="Your Name" class="fab fa-linkedin"></a>
+            <a href="https://scholar.google.com/citations?user=https://scholar.google.com/citations?hl=en&user=xCCaCLMAAAAJ" target="_blank" title="Google Scholar"></i> </a>
             <a href="assets/Skills_CV(1).pdf" download title="Download CV"><i class="fas fa-file-arrow-down"></i></a>
         </div>
     </div>
@@ -46,9 +46,9 @@
         <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#Certificates">Projects</a></li>
-            <li><a href="#Conferences">Projects</a></li>
-            <li><a href="#Research">Projects</a></li>
+            <li><a href="#Certificates">Certificates</a></li>
+            <li><a href="#Conferences">Conferences</a></li>
+            <li><a href="#Research">Research interests</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -71,71 +71,139 @@
     </div>
 </section>
 
-<!-- PROJECTS SECTION -->
-<section id="projects" class="section">
-    <div class="container">
-        <h2>My Projects</h2>
-        <div class="projects-grid">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects Tabs - Modern</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 20px;
+      background: #f9fafb;
+      color: #333;
+    }
 
-            <!--💡UPDATE: Replace this with your own project. Add as many as you like!-->
-            <!-- Project 1 -->
-             <div class="project-card">
-                <!--💡UPDATE: Add a preview image of your project to assets/images/ -->
-                <img src="assets/images/project-placeholder-1.jpg" alt="Project One Preview">
-                <div class="project-card-content">
-                    <h3>Project Title One</h3>
-                    <p>A brief, one or two-sentence description of your project, what it does, and the tools you used.</p>
-                    <div class="project-buttons">
-                        <!--💡UPDATE: Add link to your project's code/documentation on GitHub-->
-                        <a href="[YOUR_GITHUB_PROJECT_URL]" target="_blank" class="btn">Documentation</a>
-                        <!--💡UPDATE: Add link to your live dashboard (e.g., Power BI, Tableau Public)-->
-                        <a href="[YOUR_LIVE_DASHBOARD_URL]" target="_blank" class="btn btn-secondary">View Dashboard</a>
-                    </div>
-                </div>
-            </div>
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #222;
+    }
 
-            <!-- Project 2 -->
-            <div class="project-card">
-                <img src="assets/images/project-placeholder-2.jpg" alt="Project Two Preview">
-                <div class="project-card-content">
-                    <h3>Project Title Two</h3>
-                    <p>A brief, one or two-sentence description of your project, what it does, and the tools you used.</p>
-                    <div class="project-buttons">
-                        <a href="[YOUR_GITHUB_PROJECT_URL]" target="_blank" class="btn">Documentation</a>
-                        <a href="[YOUR_LIVE_DASHBOARD_URL]" target="_blank" class="btn btn-secondary">View Dashboard</a>
-                    </div>
-                </div>
-            </div>
+    /* Tabs container */
+    .tab {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
 
-            <!-- Project 3 -->
-            <div class="project-card">
-                <img src="assets/images/project-placeholder-3.jpg" alt="Project Three Preview">
-                <div class="project-card-content">
-                    <h3>Project Title Three</h3>
-                    <p>A brief, one or two-sentence description of your project, what it does, and the tools you used.</p>
-                    <div class="project-buttons">
-                        <a href="[YOUR_GITHUB_PROJECT_URL]" target="_blank" class="btn">Documentation</a>
-                        <a href="[YOUR_LIVE_DASHBOARD_URL]" target="_blank" class="btn btn-secondary">View Dashboard</a>
-                    </div>
-                </div>
-            </div>
+    /* Tab buttons */
+    .tab button {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      outline: none;
+      cursor: pointer;
+      padding: 12px 25px;
+      border-radius: 30px;
+      transition: all 0.3s ease;
+      font-size: 15px;
+      font-weight: 500;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
 
-            <!-- Project 4 -->
-            <div class="project-card">
-                <img src="assets/images/project-placeholder-4.jpg" alt="Project Four Preview">
-                <div class="project-card-content">
-                    <h3>Project Title Four</h3>
-                    <p>A brief, one or two-sentence description of your project, what it does, and the tools you used.</p>
-                    <div class="project-buttons">
-                        <a href="[YOUR_GITHUB_PROJECT_URL]" target="_blank" class="btn">Documentation</a>
-                        <a href="[YOUR_LIVE_DASHBOARD_URL]" target="_blank" class="btn btn-secondary">View Dashboard</a>
-                    </div>
-                </div>
-            </div>
+    .tab button:hover {
+      background-color: #f0f4ff;
+      border-color: #007bff;
+    }
 
-        </div>
-    </div>
-</section>
+    .tab button.active {
+      background-color: #007bff;
+      color: white;
+      border-color: #007bff;
+      font-weight: bold;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+    }
+
+    /* Tabs content */
+    .tabcontent {
+      display: none;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      border-radius: 15px;
+      background: #fff;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      animation: fadeEffect 0.5s;
+    }
+
+    .tabcontent h3 {
+      margin-top: 0;
+      color: #007bff;
+    }
+
+    .tabcontent p {
+      line-height: 1.6;
+    }
+
+    /* Animation */
+    @keyframes fadeEffect {
+      from {opacity: 0; transform: translateY(10px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+
+  <h2>My Projects</h2>
+  <div class="tab">
+    <button class="tablinks active" onclick="openTab(event, 'Web')">🌐 Web</button>
+    <button class="tablinks" onclick="openTab(event, 'Applications')">📱 Applications</button>
+    <button class="tablinks" onclick="openTab(event, 'AI')">🤖 AI</button>
+    <button class="tablinks" onclick="openTab(event, 'DataAnalysis')">📊 Data Analysis</button>
+  </div>
+
+  <div id="Web" class="tabcontent" style="display:block;">
+    <h3>Web Projects</h3>
+    <p>Portfolio Website, E-commerce site, Blog platform...</p>
+  </div>
+
+  <div id="Applications" class="tabcontent">
+    <h3>Applications</h3>
+    <p>Mobile apps, Desktop tools, Productivity apps...</p>
+  </div>
+
+  <div id="AI" class="tabcontent">
+    <h3>AI Projects</h3>
+    <p>Emotion Recognition, Chatbot, Image Classification...</p>
+  </div>
+
+  <div id="DataAnalysis" class="tabcontent">
+    <h3>Data Analysis</h3>
+    <p>Power BI Dashboards, SQL Reports, Data Modeling...</p>
+  </div>
+
+  <script>
+    function openTab(evt, tabName) {
+      // Hide all tab contents
+      let tabcontent = document.getElementsByClassName("tabcontent");
+      for (let i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+
+      // Remove active class from all buttons
+      let tablinks = document.getElementsByClassName("tablinks");
+      for (let i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+
+      // Show the selected tab
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+  </script>
+
+
 
 <!-- SKILLS SECTION -->
 <section id="skills" class="section">
