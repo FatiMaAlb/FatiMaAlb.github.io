@@ -46,6 +46,7 @@
         <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#Experence">Experence</a></li>
             <li><a href="#Certificates">Certificates</a></li>
             <li><a href="#Conferences">Conferences</a></li>
             <li><a href="#Research">Research interests</a></li>
@@ -154,7 +155,7 @@
       to {opacity: 1; transform: translateY(0);}
     }
   </style>
-
+  <section id="projects">
   <h2>My Projects</h2>
   <div class="tab">
     <button class="tablinks active" onclick="openTab(event, 'Web')">🌐 Web</button>
@@ -163,41 +164,250 @@
     <button class="tablinks" onclick="openTab(event, 'DataAnalysis')">📊 Data Analysis</button>
   </div>
 
-  <div id="Web" class="tabcontent" style="display:block;">
-    <h3>Web Projects</h3>
-    <p>Portfolio Website, E-commerce site, Blog platform...</p>
-     
-        
-          </div> 
-      </div>
-  </div>
+  <!-- ✅ لازم تضيفي bootstrap css & js -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
+<!-- ========== Web Section ========== -->
+<div id="Web" class="tabcontent" style="display:block;">
+  <h3>Tawtheeq platform</h3>
+  <p>
+    I contributed as part of a development team in building a platform for documenting courses and training programs at Imam Abdulrahman bin Faisal University.
+    The system enables trainers to create and automatically send certificates, while allowing trainees to access and manage all their certificates through a personal account.
+  </p>
 
-  <div id="Applications" class="tabcontent">
-  <h3>Applications</h3>
-  <div class="projects-grid">
-    
-    <!-- Project 1 -->
-    <div class="project-card">
-      <img src="assets/Headrest Icon.jpg" alt="App Project 1">
-      <h4><a href="https://github.com/YourGitHub/App1" target="_blank">Task Manager App</a></h4>
-    </div>
-
-
-
+  <div class="project-card">
+    <img src="assets/images/Tawtheeq.png" alt="Web Project 1" class="img-fluid w-auto" style="max-width:170%; object-fit:contain;">
+    <h4><a href="https://github.com/FatiMaAlb/Tawtheeq2.git" target="_blank">GitHub Repository</a></h4>
   </div>
 </div>
 
 
-  <div id="AI" class="tabcontent">
-    <h3>AI Projects</h3>
-    <p>Emotion Recognition, Chatbot, Image Classification...</p>
+<!-- ========== Applications Section ========== -->
+<div id="Applications" class="tabcontent">
+  <h3>HeadRest: Migraine Tracking System</h3>
+  <p>
+    The HeadRest system is an optimal solution that helps users monitor their migraines and follow up with their doctors.
+    Based on the research we conducted, It is clear that developing an accurate system to help people monitor headaches will be a successful system and improve the quality of life for a large segment of society.
+  </p>
+
+  <!-- Carousel -->
+  <div id="carouselApps" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/images/Interfaces.png" alt="App Project 1" class="img-fluid w-auto" style="max-width:90%; object-fit:contain;">
+        <h4><a href="https://github.com/FatiMaAlb/Headrest" target="_blank">GitHub Repository</a></h4>
+      </div>
+      <div class="carousel-item">
+        <img src="assets/images/Headrest Poster.jpg" alt="App Project 2" class="img-fluid w-auto" style="max-width:90%; object-fit:contain;">
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselApps" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselApps" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+
+<!-- ========== AI Section ========== -->
+<div id="AI" class="tabcontent">
+  <h3>CNN Models for Facial Emotion Recognition</h3>
+  <p>
+    A convolutional neural network (CNN) developed for facial emotion recognition.
+    The model was initially trained on the FER2013 dataset, achieving up to 70% accuracy.
+    Different optimizers and hyperparameter configurations were explored to enhance performance.
+    To ensure robustness and generalizability, the model was further evaluated on multiple benchmark datasets,
+    including CK, RAF-DB, AffectNet, JAFFE, FEMI-DB, and EmoRec-DB.
+  </p>
+
+  <!-- Carousel -->
+  <div id="carouselAI" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/images/Accuracy Datast.jpg" class="d-block w-100" alt="Accuracy">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/images/confivin_matrix.png" class="d-block w-100" alt="Confusion Matrix">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/images/fer2013_imbalance.png" class="d-block w-100" alt="Imbalance">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/images/workflow of the paper4.png" class="d-block w-100" alt="Workflow">
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselAI" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselAI" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+
+<!-- ========== Data Analysis Section ========== -->
+<div id="DataAnalysis" class="tabcontent">
+  <h3>Data Analysis</h3>
+  <p>Power BI Dashboards, SQL Reports, Data Modeling...</p>
+
+  <!-- Carousel -->
+  <div id="carouselData" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <!-- مشروع 1 -->
+      <div class="carousel-item active">
+        <img src="assets/images/1.jpg" class="d-block w-100" alt="Project 1">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+          <h5>مشروع لوحة التحكم</h5>
+          <p>تحليل البيانات باستخدام Power BI مع عرض الداشبورد وتحليل الأداء.</p>
+          <a href="project1.html" class="btn btn-primary">عرض المشروع</a>
+        </div>
+      </div>
+
+      <!-- مشروع 2 -->
+      <div class="carousel-item">
+        <img src="assets/images/2.jpg" class="d-block w-100" alt="Project 2">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+          <h5>تحليل بيانات الموظفين</h5>
+          <p>تقارير SQL لتتبع أداء الموظفين وتحليل الإنتاجية.</p>
+          <a href="project2.html" class="btn btn-primary">عرض المشروع</a>
+        </div>
+      </div>
+
+      <!-- مشروع 3 -->
+      <div class="carousel-item">
+        <img src="assets/images/3.jpg" class="d-block w-100" alt="Project 3">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+          <h5>تحليل بيانات Google Play</h5>
+          <p>مشروع تحليل التطبيقات وتقييم التوزيع والمراجعات.</p>
+          <a href="project3.html" class="btn btn-primary">عرض المشروع</a>
+        </div>
+      </div>
+
+      <!-- مشروع 4 -->
+      <div class="carousel-item">
+        <img src="assets/images/4.jpg" class="d-block w-100" alt="Project 4">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+          <h5>مبيعات الربع الأول</h5>
+          <p>تحليل بيانات المبيعات باستخدام الرسوم البيانية والجداول.</p>
+          <a href="project4.html" class="btn btn-primary">عرض المشروع</a>
+        </div>
+      </div>
+
+      <!-- مشروع 5 -->
+      <div class="carousel-item">
+        <img src="assets/images/5.jpg" class="d-block w-100" alt="Project 5">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+          <h5>مبيعات السوبرماركت</h5>
+          <p>تقرير شامل لمبيعات السوبرماركت وتحليل الأداء الشهري.</p>
+          <a href="project5.pdf" class="btn btn-primary" target="_blank">عرض المشروع</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselData" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">السابق</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselData" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">التالي</span>
+    </button>
+  </div>
+</div>
+
+</section>
+
+
+ <section id="Certificates">
+  <h2>My Certificates</h2>
+  <div class="tab">
+    <button class="tablinks active" onclick="openTab(event, 'Bootcamps')"> Bootcamps</button>
+    <button class="tablinks" onclick="openTab(event, 'Courses')"> Courses</button>
+    <button class="tablinks" onclick="openTab(event, 'Thanks and Appreciation')">Thanks and Appreciation</button>
+    <button class="tablinks" onclick="openTab(event, 'Workshops')">Workshops</button>
+    <button class="tablinks" onclick="openTab(event, 'Workshops')">Recommendations</button>
   </div>
 
-  <div id="DataAnalysis" class="tabcontent">
-    <h3>Data Analysis</h3>
-    <p>Power BI Dashboards, SQL Reports, Data Modeling...</p>
+
+<!-- ========== Certificet Section ========== -->
+<div id="Bootcamps" class="tabcontent" style="display: block;">
+ 
+  <!-- Carousel -->
+  <div id="carouselData2" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <!-- 1-->
+      <div class="carousel-item active">
+        <img src="assets/images/bootcamop 1.jpg" class="d-block w-100" alt="Project 1">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+          
+        </div>
+      </div>
+
+      <!-- م 2-->
+      <div class="carousel-item">
+        <img src="assets/images/bootcamop 2.jpg" class="d-block w-100" alt="Project 2">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+          
+         
+        </div>
+      </div>
+
+      <!-- 1 -->
+      <div class="carousel-item">
+        <img src="assets/images/bootcamop3.jpg" class="d-block w-100" alt="Project 3">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+          
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="carousel-item">
+        <img src="assets/images/bootcamop 4.jpg" class="d-block w-100" alt="Project 4">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+          
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="carousel-item">
+        <img src="assets/images/bootcamop 5.jpg" class="d-block w-100" alt="Project 5">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselData2" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">السابق</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselData2" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">التالي</span>
+    </button>
   </div>
+</div>
+
+</section>
+
+
 
   <script>
     function openTab(evt, tabName) {

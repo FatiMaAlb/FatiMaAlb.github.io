@@ -56,7 +56,9 @@ a:hover {
 
 img {
     max-width: 100%;
-    height: auto;
+    height: 75%;
+        /* يحافظ على الأبعاد */
+    object-fit: contain;
 }
 
 /* --- 3. Header --- */
@@ -217,7 +219,7 @@ nav ul li a:hover::after {
 
 .project-card img {
     width: 100%;
-    height: 220px;
+    height: 250px;
     object-fit: cover;
 }
 
@@ -572,4 +574,125 @@ footer p {
     .tabcontent p {
       line-height: 1.6;
     }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 20px;
+      background: #f9fafb;
+      color: #333;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #222;
+    }
+
+    /* Tabs container */
+    .tab {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    /* Tab buttons */
+    .tab button {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      outline: none;
+      cursor: pointer;
+      padding: 12px 25px;
+      border-radius: 30px;
+      transition: all 0.3s ease;
+      font-size: 15px;
+      font-weight: 500;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .tab button:hover {
+      background-color: #f0f4ff;
+      border-color: #007bff;
+    }
+
+    .tab button.active {
+      background-color: #007bff;
+      color: white;
+      border-color: #007bff;
+      font-weight: bold;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+    }
+
+    /* Tabs content */
+    .tabcontent {
+      display: none;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      border-radius: 15px;
+      background: #fff;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      animation: fadeEffect 0.5s;
+    }
+
+    .tabcontent h3 {
+      margin-top: 0;
+      color: #007bff;
+    }
+
+    .tabcontent p {
+      line-height: 1.6;
+    }
+
+    /* Animation */
+    @keyframes fadeEffect {
+      from {opacity: 0; transform: translateY(10px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    .custom-icon {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0,0,0,0.5); /* خلفية داكنة شفافة */
+    border-radius: 50%; /* شكل دائري */
+    background-size: 100%, 100%;
+    box-shadow: 0 0 5px 2px rgba(0,0,0,0.7);
+}
+
+/* تحسين نصوص الكاروسيل */
+.carousel-caption h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.carousel-caption p {
+    font-size: 1rem;
+}
+
+/* زر العرض */
+.carousel-caption .btn {
+    margin-top: 0.5rem;
+}
+.custom-icon {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 50%;
+    background-size: 100% 100%;
+}
+.carousel {
+  margin-top: 20px;   /* مسافة فوق */
+  margin-bottom: 40px; /* مسافة تحت عشان ما يختفي اللي بعده */
+  max-width: 900px;   /* عرض الكاروسيل (غير الرقم حسب مقاس موقعك) */
+  margin-left: auto;
+  margin-right: auto; /* يخليه بالوسط */
+}
+
+.carousel-inner img {
+  max-height: 450px;   /* يمنع الصور تصير طويلة وتغطي الصفحة */
+  object-fit: cover;   /* يضمن تناسق الصورة */
+  border-radius: 10px; /* يعطي حواف ناعمة */
+}
+
+    
+  
 }
