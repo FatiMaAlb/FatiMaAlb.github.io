@@ -693,6 +693,26 @@ footer p {
   border-radius: 10px; /* يعطي حواف ناعمة */
 }
 
+
+
+
+
+.conference-img:hover {
+  transform: scale(1.05);
+}
+
+/* تخصيص أزرار Carousel */
+.custom-carousel-icon {
+  background-color: blue !important;  /* اللون الأزرق */
+  width: 50px !important;             /* حجم أكبر */
+  height: 50px !important;
+  border-radius: 50%;                 /* شكل دائري */
+  background-size: 50% 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(1.2);
+}
+
     
   
 }
