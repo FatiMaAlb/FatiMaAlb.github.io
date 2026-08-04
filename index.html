@@ -677,39 +677,60 @@
     </div>
 </section>
 
-<!-- CONTACT FORM SECTION -->
+
 <section id="contact" class="section">
     <div class="container">
-        <h2>Send me a message</h2>
-        
-        <!--💡UPDATE: Go to formsubmit.co and replace the email with your own-->
-        <form action="https://formsubmit.co/FatimaAlburaiki@outlook.sa" method="POST" class="contact-form">
-            <p> Interested in collaborating or have questions about my work? I'd love to hear from you!</p>
+        <h2>Get In Touch</h2>
 
-            <!-- Form Fields -->
+        <p class="contact-text">
+            Interested in collaborating, discussing research, or exploring new opportunities?
+            Feel free to send me a message.
+        </p>
+
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+
+            <!-- Web3Forms Access Key -->
+            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY">
+
+            <!-- Email Subject -->
+            <input type="hidden" name="subject" value="New Portfolio Message">
+
+            <!-- Disable Spam Redirect -->
+            <input type="hidden" name="from_name" value="Portfolio Website">
+
+            <!-- Honeypot ضد السبام -->
+            <input type="checkbox" name="botcheck" style="display:none;">
+
             <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name" placeholder="Your name" required>
+                <label>Name</label>
+                <input type="text" name="name" placeholder="Your Name" required>
             </div>
+
             <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="Your email" required>
+                <label>Email</label>
+                <input type="email" name="email" placeholder="Your Email" required>
             </div>
+
             <div class="form-group">
-                <label for="subject">Subject</label>
-                <input type="text" name="subject" id="subject" placeholder="Subject" required>
+                <label>Subject</label>
+                <input type="text" name="subject" placeholder="Subject" required>
             </div>
+
             <div class="form-group">
-                <label for="message">Message</label>
-                <textarea name="message" id="message" rows="6" placeholder="Your message" required></textarea>
+                <label>Message</label>
+                <textarea name="message" rows="6" placeholder="Write your message..." required></textarea>
             </div>
-            
-            <!-- Submit Button -->
-            <button type="submit" class="btn">Send Message</button>
+
+            <button type="submit" class="btn">
+                Send Message
+            </button>
 
         </form>
+
     </div>
 </section>
+<!-- CONTACT FORM SECTION -->
+
 
 <!-- FOOTER -->
 <footer>
