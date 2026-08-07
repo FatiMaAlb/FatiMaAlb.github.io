@@ -713,6 +713,22 @@ footer p {
   filter: brightness(1.2);
 }
 
-    
+ #skills .container {
+    max-width: 1300px;
+}
+
+.skills-table {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.skill-column {
+    padding: 25px 20px;
+    background-color: var(--card-bg-color);
+    border-radius: 8px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.07);
+}   
   
 }
